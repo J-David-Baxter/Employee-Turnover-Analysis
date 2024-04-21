@@ -7,11 +7,9 @@ The goal of this project was to create a machine learning model to predict emplo
 Salifort Motors is experiencing high employee turnover rate. The company wants to create a culture that supports the development and wellbeing of their employees. The high turnover rate also has a negative financial impact on the company. Leadership wants to identify the reasons that employees are leaving so that they can develop a solution.
 
 ## Data Understanding
-The data is a sample of employees from Salifort Motors and compiled by their HR department. The data has exactly 149,999 rows and 10 columns. Each row contains data on one employee. The features are satisfaction level, last evaluation score, number of current projects, average monthly hours worked, tenure, number of work accidents, whether or not the employee has been promoted in the last 5 years, department, salary, and whether or not the employee has left. The bar plot below shows the amount of employees who stayed (83%) and employees who left (17%).
+The data is a sample of employees from Salifort Motors and compiled by their HR department. The data has exactly 149,999 rows and 10 columns. Each row contains data on one employee. The features are satisfaction level, last evaluation score, number of current projects, average monthly hours worked, tenure, number of work accidents, whether or not the employee has been promoted in the last 5 years, department, salary, and whether or not the employee has left. Several column names were renamed to correct typos and maintain a consistent naming convention. The bar plot below shows the amount of employees who stayed (83%) and employees who left (17%).
 
 ![barplot](https://github.com/J-David-Baxter/Employee-Turnover-Analysis/assets/57837488/c08dcb3d-a3f2-41c4-a1db-6f215a71c8ad)
-
-Several column names were renamed to correct typos and maintain a consistent naming convention.
 
 ## Modeling and Evaluation
 Our random forest model consisted of 500 trees, each with a max depth of 6. It had an AUC score of 95.2%. It also had 98.1% precision, 90.7% recall, 94.3% F1, and 98.2% accuracy. The model performed well when predicting employees who leave, and was very good at predicting employees who stay. The below plot shows the feature importance for our model.
